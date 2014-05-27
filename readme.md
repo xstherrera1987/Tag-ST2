@@ -1,18 +1,35 @@
-***[Sublime Text 3+](http://www.sublimetext.com/) Package. Install via an updated version of  [Package Control 2+](https://sublime.wbond.net/installation). Just **DON'T** install manually.
+Tag-ST2
+======
+This package ([Tag-ST2](http://www.sublimetext.com/)) is a fork of the official [ST/Tag](https://github.com/SublimeText/Tag) plugin for ST3.  I'll be backporting bug fixes from the official ST3 branch and trying to keep this working on ST2.
+
+
+Installation
+------------------
++ Windows
+  + cd %APPDATA%/Sublime Text 2/Packages
+  + git clone git@github.com:xstherrera1987/Tag-ST2.git Tag
+  + restart sublime
+
++ OSX
+	+ cd  ~/Library/Application Support/Sublime Text 2/Packages
+	+ git clone git@github.com:xstherrera1987/Tag-ST2.git Tag
+	+ restart sublime
+
++ Linux
+  + cd  ~/.Sublime Text 2/Packages
+  + git clone git@github.com:xstherrera1987/Tag-ST2.git Tag
+  + restart sublime
+
++ then...
+  + Hope it Works
+
 
 Description
 ------------------
+The following is from the original plugin:
 
-"Tag" plugin is a collection of packages about tags, mixed together in an effort to provide a single package with utilities to work with tags.
 
-Currently provides: "Close tag on slash", "Tag indent or AutoFormat Tags",  "Tag Remove", "Insert as Tag", "Tag Remove Attributes", "Tag Close", "Tag Lint"
-
-Improvements and more features about tags are welcome on this package. Please submit these.
-
-Upgrade
-------------------
-
-If you already installed "Close tag on slash" or "Tag indent", please remove these packages first and the associated settings. "Close tag on slash" already provides keymap for "/", then if you already installed that keymap you may want to remove it.
+---
 
 Close tag on slash
 ------------------
