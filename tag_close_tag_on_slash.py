@@ -1,14 +1,18 @@
 import sublime, sublime_plugin
 from Tag import Tag
 
-Tag = Tag.Tag()
 def plugin_loaded():
-	global s
+	Tag = Tag()
 	s = sublime.load_settings('Tag Package.sublime-settings')
 
 class TagCloseTagOnSlashCommand(sublime_plugin.TextCommand):
-
 	def run(self, edit):
+		# temp disable
+		self.view.run_command('insert',  {"characters": "/"})
+		return
+
+		global s
+		global Tag
 		if s.get('enable_close_tag_on_slash') == False:
 			self.view.run_command('insert',  {"characters": "/"})
 			return
