@@ -1,5 +1,9 @@
-*.sublime-project
-*.cache
-push.bat
+# Python
+__pycache__/
+*.py[cod]
 *.pyc
+
+# Sublime
+*.sublime-project
 package-metadata.json
+*.cache
